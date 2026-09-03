@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2a4a">
+
+<title>Family Business</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+.header {
+  background: #0b2a4a;
+  color: white;
+  padding: 25px 20px;
+  border-radius: 0 0 25px 25px;
+}
+
+.header h1 {
+  font-size: 27px;
+}
+
+.header p {
+  margin-top: 5px;
+  opacity: .8;
+}
+
+.container {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.06);
+}
+
+.card .icon {
+  font-size: 25px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #657080;
+}
+
+.card strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 20px;
+}
+
+.section {
+  margin-top: 25px;
+}
+
+.section h2 {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.menu {
+  display: grid;
+  gap: 12px;
+}
+
+.menu button {
+  border: none;
+  background: white;
+  padding: 17px;
+  border-radius: 16px;
+  text-align: left;
+  font-size: 16px;
+  box-shadow: 0 3px 12px rgba(0,0,0,.05);
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ddd;
+}
+
+.bottom-nav button {
+  border: none;
+  background: none;
+  font-size: 12px;
+  color: #657080;
+}
+
+.bottom-nav .add {
+  background: #0b2a4a;
+  color: white;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  font-size: 25px;
+  margin-top: -30px;
+}
+
+@media (min-width: 700px) {
+  body {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <h1>Family Business</h1>
+  <p>Loan Management</p>
+</header>
+
+<main class="container">
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">💰</div>
+      <h3>Total Loan</h3>
+      <strong>RM 0.00</strong>
+    </div>
+
+    <div class="card">
+      <div class="icon">💵</div>
+      <h3>Total Paid</h3>
+      <strong>RM 0.00</strong>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔴</div>
+      <h3>Outstanding</h3>
+      <strong>RM 0.00</strong>
+    </div>
+
+    <div class="card">
+      <div class="icon">👥</div>
+      <h3>Customers</h3>
+      <strong>0</strong>
+    </div>
+
+  </div>
+
+  <section class="section">
+    <h2>Quick Actions</h2>
+
+    <div class="menu">
+      <button>👥 Customer List</button>
+      <button>➕ Add New Loan</button>
+      <button>💵 Record Payment</button>
+      <button>📊 Reports</button>
+      <button>⚙️ Settings</button>
+    </div>
+  </section>
+
+</main>
+
+<nav class="bottom-nav">
+  <button>🏠<br>Home</button>
+  <button>👥<br>Customers</button>
+  <button class="add">+</button>
+  <button>💵<br>Payments</button>
+  <button>⚙️<br>Settings</button>
+</nav>
+
+</body>
+</html>
